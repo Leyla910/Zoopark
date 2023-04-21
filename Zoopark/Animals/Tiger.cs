@@ -1,6 +1,6 @@
 ﻿namespace Zoopark.Animals
 {
-    public class TigerAnimal:Animal
+    public class TigerAnimal:AbstractAnimal
     {
         public TigerAnimal(string name, double mass, int age, double foodVolume):base(name, mass, age, foodVolume)
         {

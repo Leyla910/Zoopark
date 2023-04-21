@@ -1,6 +1,6 @@
 ﻿namespace Zoopark.Animals
 {
-    public class Animal
+    public abstract class AbstractAnimal
     {
         public string Name { get; protected set; }
 
@@ -17,7 +17,7 @@
 
         protected double _square;
 
-        public Animal(string name, double mass, int age, double foodVolume)
+        public AbstractAnimal(string name, double mass, int age, double foodVolume)
         {
             Name = name;
             Mass = mass;
