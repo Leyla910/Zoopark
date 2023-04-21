@@ -2,20 +2,7 @@
 {
     public class Animal
     {
-        public string Name
-        {
-            get
-            {
-                return Name;
-            }
-            set
-            {
-                if (Name.Length == 0)
-                {
-                    throw new ArgumentException();
-                }
-            }
-        }
+        public string Name { get; protected set; }
 
         public string Biom { get; protected set; }
 
@@ -32,6 +19,10 @@
 
         public Animal(string name, double mass, int age, double foodVolume)
         {
+            Name = name;
+            Mass = mass;
+            Age = age;
+            FoodVolume = foodVolume;
             
         }
 
